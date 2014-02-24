@@ -1,4 +1,3 @@
 Personal Project Report
 ====
-
-## Alexander Selzer
+<span class="author">Alexander Selzer</span>

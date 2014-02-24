@@ -7,6 +7,7 @@ var gulp = require("gulp"),
     nodemon = require("gulp-nodemon");
 
 var jsFiles = ["*.js", "app/js/**.js"];
+var hbrFiles = ["app/**.hbr"];
 var lessFiles = ["app/less/**.less"];
 
 gulp.task("compileLess", function() {
@@ -39,6 +40,7 @@ gulp.task("compile", function() {
 gulp.task("watch", function() {
   gulp.watch(lessFiles, ["compileLess"]);
   gulp.watch(jsFiles, ["lint"]);
+  gulp.watch(hbrFiles, ["compile"]);
 });
 
 gulp.task("dev", ["watch", "server", "compile"]);
