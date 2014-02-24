@@ -1,0 +1,34 @@
+{
+  "name": "chemistry-ab-pH",
+  "version": "0.0.2",
+  "description": "My chemistry assignment about the impact of pH on the environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pH",
+    "chemistry",
+    "homework",
+    "assignment",
+    "environment",
+    "impact"
+  ],
+  "dependencies" : {
+    "express": "3.x"
+  },
+  "devDependencies" : {
+    "gulp" : "3.x",
+    "gulp-util" : "2.x",
+    "gulp-nodemon" : "0.1.x",
+    "gulp-less": "1.2.x",
+    "gulp-autoprefixer" : "0.0.x",
+    "gulp-jshint" : "1.3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlexanderSelzer/chemistry-ab-site"
+  },
+  "author": "Alexander Selzer <aselzer3@gmail.com>",
+  "license": "MIT-AT"
+}

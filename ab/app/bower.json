@@ -1,0 +1,14 @@
+{
+  "name": "chemistry-ab-site",
+  "version": "0.0.1",
+  "authors" : [
+    "Alexander Selzer <aselzer3@gmail.com>"
+  ],
+  "license" : "MIT-AT",
+  "dependencies": {
+    "angular": "1.2.6",
+    "jquery": "~1.10.2",
+    "bootstrap": "~3.0.3",
+    "countable": " 2.x"
+  }
+}
