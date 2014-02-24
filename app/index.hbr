@@ -16,13 +16,11 @@
   <body>
     <div class="container">
       <div document class="document">
-        <h1>Personal Project Report</h1>
-
-<h2>Alexander Selzer</h2>
+        {{{markdown}}}
       </div>
-      
+      {{{bibliography}}}
       <div class="footer">
-        <p>Alexander Selzer, Feb. 24, 2014</p>
+        {{{footer}}}
       </div>
     </div>
   </body>

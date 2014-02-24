@@ -15,7 +15,9 @@
     "impact"
   ],
   "dependencies" : {
-    "express": "3.x"
+    "express": "3.x",
+    "markdown": "0.5.x",
+    "handlebars": "2.x"
   },
   "devDependencies" : {
     "gulp" : "3.x",

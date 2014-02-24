@@ -1,4 +1,5 @@
 var gulp = require("gulp"),
+    exec = require("child_process").exec,
     nodemon = require("gulp-nodemon"),
     jshint = require("gulp-jshint"),
     less = require("gulp-less"),
@@ -28,11 +29,18 @@ gulp.task("server", function() {
   });
 });
 
+gulp.task("compile", function() {
+  exec("node build.js", function(err, stdout, stderr) {
+    if (err) throw err;
+    console.log(stdout);
+  });
+});
+
 gulp.task("watch", function() {
   gulp.watch(lessFiles, ["compileLess"]);
   gulp.watch(jsFiles, ["lint"]);
 });
 
-gulp.task("dev", ["watch", "server"]);
+gulp.task("dev", ["watch", "server", "compile"]);
 
-gulp.task("default", ["lint", "compileLess"]);
+gulp.task("default", ["lint", "compileLess", "compile"]);
