@@ -11,5 +11,14 @@ chemistryAB.controller("bibliography", function($scope, $http) {
     Countable.live(document[0], function(count) {
       console.log("Word count:", count);
     });
+    angular.element(document).onepage_scroll({
+      sectionContainer: "section",
+      easing: "ease",
+      animationTime: 1000,             
+      pagination: true,                       
+      loop: true,                     
+      keyboard: true,                  
+      responsiveFallback: false   
+    });
   };
 });
