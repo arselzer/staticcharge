@@ -22,12 +22,16 @@
           <section>
             <div class="container">
             {{{this}}}
-            <div class="container">
+            </div>
           </section>
         {{/each}}
-      </div>
-      <div class="container">
-        {{{bibliography}}}
+        {{#if bibliography}}
+          <section>
+            <div class="container">
+              {{{bibliography}}}
+            </div>
+          </section>
+        {{/if}}
       </div>
   </body>
 </html>
