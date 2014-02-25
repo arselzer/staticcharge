@@ -7,7 +7,7 @@ var gulp = require("gulp"),
     nodemon = require("gulp-nodemon");
 
 var jsFiles = ["*.js", "app/js/**.js"];
-var templateFiles = ["app/**.hbr", "app/**.md"];
+var templateFiles = ["app/**.hbr", "app/**.md", "app/content/**.md"];
 var lessFiles = ["app/less/**.less"];
 
 gulp.task("compileLess", function() {
