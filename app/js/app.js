@@ -13,12 +13,12 @@ chemistryAB.controller("bibliography", function($scope, $http) {
     });
     angular.element(document).onepage_scroll({
       sectionContainer: "section",
-      easing: "ease",
+      easing: "ease-in-out",
       animationTime: 1000,             
       pagination: true,                       
       loop: true,                     
       keyboard: true,                  
-      responsiveFallback: false   
+      responsiveFallback: 620
     });
   };
 });

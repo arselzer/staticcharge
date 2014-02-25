@@ -15,7 +15,7 @@ if (config.bibliography === false)
 
 // Sort the markdown file names.
 var mdFileNames = markdownFiles.map(function(file) {
-  return parseInt(/(\d)\.md/.exec(file)[1]);
+  return parseInt(/(\d+)\.md/.exec(file)[1]);
 })
 .sort()
 .map(function(number) {
@@ -37,8 +37,6 @@ markdownFiles.forEach(function(file) {
     )
   );
 });
-
-console.log(content);
 
 var footer = marked(footerSrc);
 

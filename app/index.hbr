@@ -17,13 +17,17 @@
   </head>
 
   <body>
-    <div class="container">
       <div document class="document">
         {{#each markdown}}
-          <section>{{{this}}}</section>
+          <section>
+            <div class="container">
+            {{{this}}}
+            <div class="container">
+          </section>
         {{/each}}
       </div>
-      {{{bibliography}}}
-    </div>
+      <div class="container">
+        {{{bibliography}}}
+      </div>
   </body>
 </html>
