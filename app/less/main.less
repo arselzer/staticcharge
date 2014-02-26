@@ -20,8 +20,8 @@ h1 {
   text-align: center;
 }
 
-h3,
-h2 {
+h2,
+h3 {
   font-family: "Lato";
   display: block;
   margin-top: 20px;
@@ -29,24 +29,45 @@ h2 {
   text-align: center;
 }
 
+h2 {
+  font-size: 3em;
+}
+
 h3 {
   font-size: 2em;
 }
 
-h2 {
-  font-size: 3em;
+h4,
+h5 {
+  font-size: 1.6em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  display: block;
+}
+
+ol {
+  margin-top: 80px;
+  
+  @media (max-width: @screen-md-min) {
+    margin-left: 20px;
+  }
+  
+  @media (min-width: @screen-md-min) {
+    margin-left: 30%;
+  }
+  
+  width: 600px;
+  li {
+    font-size: 26px;
+  }
+  > li {
+    margin-top: 20px;
+  }
 }
 
 .section {
   margin: 40px 0 40px 0;
   display: block;
-
-  .h4,h5 {
-    font-size: 1.6em;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    display: block;
-  }
 
   .text {
     font-size: 1em;

@@ -17,7 +17,8 @@ chemistryAB.controller("bibliography", function($scope, $http) {
       animationTime: 1000,             
       pagination: true,                       
       loop: true,                     
-      keyboard: true,                  
+      keyboard: true,
+      updateURL: true,
       responsiveFallback: 620
     });
   };
