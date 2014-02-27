@@ -9,6 +9,7 @@
     "angular": "1.2.6",
     "jquery": "~1.10.2",
     "bootstrap": "~3.0.3",
-    "Countable": " 2.x"
+    "Countable": " 2.x",
+    "onepage-scroll": "AlexanderSelzer/onepage-scroll"
   }
 }

@@ -18,10 +18,20 @@
 
   <body>
       <div document class="document">
-        {{#each markdown}}
-          <section>
+          <section class="titlepage">
             <div class="container">
-            {{{this}}}
+            {{{title}}}
+            </div>
+          </section>
+          <section class="table-of-contents">
+            <div class="container">
+            {{{contents}}}
+            </div>
+          </section>
+        {{#each markdown}}
+          <section class="page">
+            <div class="container">
+              {{{this}}}
             </div>
           </section>
         {{/each}}

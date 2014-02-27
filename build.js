@@ -3,8 +3,9 @@ var fs = require("fs");
 var marked = require("marked");
 var handlebars = require("handlebars");
 
-var markdownFiles = fs.readdirSync("./app/content");
-console.log(markdownFiles);
+function readAndRender(mdfile) {
+  return marked(fs.readFileSync(__dirname + "/app/content/" + mdfile).toString());
+}
 
 var templateSrc = fs.readFileSync("./app/index.hbr").toString("utf8");
 var footerSrc = fs.readFileSync("./app/footer.md").toString("utf8");
@@ -14,9 +15,29 @@ if (config.bibliography === false)
   bibliography = "";
 
 // Sort the markdown file names.
-var mdFileNames = markdownFiles.map(function(file) {
-  return parseInt(/(\d+)\.md/.exec(file)[1]);
-})
+
+var tableOfContents;
+var titlePage;
+
+var markdownFiles = fs.readdirSync("./app/content");
+
+// Extract special files
+markdownFiles.forEach(function(filename) {
+  if (filename === "title.md")
+    titlePage = readAndRender(filename);
+  if (filename === "contents.md")
+    tableOfContents = readAndRender(filename);
+});
+
+var mdFileNames = [];
+
+markdownFiles.forEach(function(file) {
+  if (/(\d+)\.md/.test(file))
+    mdFileNames.push(parseInt(/(\d+)\.md/.exec(file)[1]));
+});
+
+var pageFileNames = 
+mdFileNames
 .sort()
 .map(function(number) {
   return number + ".md"
@@ -29,7 +50,7 @@ var content = [];
 * and render the markdown. Push the HTML (rendered)
 * into the content array.
 */
-markdownFiles.forEach(function(file) {
+pageFileNames.forEach(function(file) {
   content.push(
     marked(
       fs.readFileSync(__dirname + "/app/content/" + file)
@@ -41,6 +62,8 @@ markdownFiles.forEach(function(file) {
 var footer = marked(footerSrc);
 
 var data = {
+  "title": titlePage,
+  "contents": tableOfContents,
   "markdown": content,
   "bibliography": bibliography,
   "footer": footer
