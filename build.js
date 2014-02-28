@@ -62,8 +62,9 @@ pageFileNames.forEach(function(file) {
 var footer = marked(footerSrc);
 
 var data = {
-  "title": titlePage,
-  "contents": tableOfContents,
+  "title": config.title,
+  "titlePage": titlePage,
+  "contentsPage": tableOfContents,
   "markdown": content,
   "bibliography": bibliography,
   "footer": footer
