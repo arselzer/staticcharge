@@ -5,13 +5,13 @@
   * Areas of Interaction
   * The Goal
   * Project Specifications
-2. [The Selection of Sources](/#5)
+2. [Selection of Sources](/#5)
   * List of chosen Sources
   * Evaluation of Sources
 3. [Application of Information](/#6)
-  * Setting up the Infrastructure
-  * Implementing the Application
-  * Evaluating the Effectivity of the System
+  * Organizational Tasks
+  * Implementation of the Application
+  * Evaluation of System's effectivity
 4. [Achievement of the Goal](/#7)
   * Judging the success
   * Presentation of the Product

@@ -3,8 +3,36 @@ var fs = require("fs");
 var marked = require("marked");
 var handlebars = require("handlebars");
 
-function readAndRender(mdfile) {
-  return marked(fs.readFileSync(__dirname + "/app/content/" + mdfile).toString());
+function readAndRender(mdfile, split) {
+  var mdString = marked(fs.readFileSync(__dirname + "/app/content/" + mdfile).toString());
+  if (!split || split === "undfined") {
+    return mdString;
+  }
+  else {
+    var results = [];
+    var hrRegexp = /<hr\s?\/?>/g;
+    if (/<hr\s?\/?>/.test(mdString)) {
+      var matches = [];
+      var match;
+      var i = 0;
+      // Push all match indexes
+      while (match = hrRegexp.exec(mdString) !== null) {
+        matches.push(hrRegexp.lastIndex);
+      }
+      // Slice HTML into slices
+      for (var i = 0, previousIndex = 0; i < matches.length; i++) {
+        var cutIndex = matches[i] - 5;
+        results.push(mdString.slice(previousIndex, cutIndex));
+        previousIndex = cutIndex;
+      }
+      console.log(JSON.stringify(results, null, 2));
+      return results;
+    }
+    else {
+      results.push(mdString);
+      return results;
+    }
+  }
 }
 
 var templateSrc = fs.readFileSync("./app/index.hbr").toString("utf8");
@@ -40,7 +68,7 @@ var pageFileNames =
 mdFileNames
 .sort()
 .map(function(number) {
-  return number + ".md"
+  return number + ".md";
 });
 
 var content = [];
@@ -51,12 +79,10 @@ var content = [];
 * into the content array.
 */
 pageFileNames.forEach(function(file) {
-  content.push(
-    marked(
-      fs.readFileSync(__dirname + "/app/content/" + file)
-      .toString()
-    )
-  );
+  var pages = readAndRender(file, true);
+  pages.forEach(function(page) {
+    content.push(page);
+  });
 });
 
 var footer = marked(footerSrc);
@@ -68,7 +94,7 @@ var data = {
   "markdown": content,
   "bibliography": bibliography,
   "footer": footer
-}
+};
 
 var template = handlebars.compile(templateSrc);
 
