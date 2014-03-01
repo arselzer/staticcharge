@@ -1,4 +1,4 @@
-# Personal Project Report
+## Personal Project Report
 # The Branches Social Network
 
 ### Alexander Selzer
