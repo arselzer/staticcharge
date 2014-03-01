@@ -49,6 +49,31 @@ h5 {
   display: block;
 }
 
+table {
+  .table();
+  .table-striped();
+  
+  > tbody > tr > td {
+    border-top: 1px solid rgb(190, 207, 209);
+  }
+  
+  > thead > tr > th {
+    border-bottom: 2px solid rgb(101, 183, 111);
+  }
+  
+  margin: 0 auto;
+  
+  /* < medium screen */
+  @media (max-width: @screen-md-min) {
+    width: (@container-sm - 200px);
+  }
+  
+  /* > medium screen */
+  @media (min-width: @screen-md-min) {
+    width: (@container-md - 200px);
+  }
+}
+
 .table-of-contents ol {
   margin-top: 80px;
   
