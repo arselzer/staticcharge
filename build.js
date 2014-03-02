@@ -5,7 +5,7 @@ var handlebars = require("handlebars");
 
 function readAndRender(mdfile, split) {
   var mdString = marked(fs.readFileSync(__dirname + "/app/content/" + mdfile).toString());
-  if (!split || split === "undfined") {
+  if (!split || typeof(split) === "undefined") {
     return mdString;
   }
   else {
