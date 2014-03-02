@@ -24,7 +24,7 @@ gulp.task("lint", function() {
 });
 
 gulp.task("server", function() {
-  nodemon( {
+  nodemon({
     script: "./index.js",
     options: "-e js"
   });

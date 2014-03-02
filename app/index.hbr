@@ -18,16 +18,20 @@
 
   <body>
       <div document class="document">
+        {{#if titlePage}}
           <section class="titlepage">
             <div class="container">
             {{{titlePage}}}
             </div>
           </section>
+        {{/if}}
+        {{#if contentsPage}}
           <section class="table-of-contents">
             <div class="container">
             {{{contentsPage}}}
             </div>
           </section>
+        {{/if}}
         {{#each markdown}}
           <section class="page">
             <div class="container">

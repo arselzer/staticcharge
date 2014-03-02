@@ -52,7 +52,6 @@ function readAndRender(mdfile, split) {
 }
 
 var templateSrc = fs.readFileSync("./app/index.hbr").toString("utf8");
-var footerSrc = fs.readFileSync("./app/footer.md").toString("utf8");
 var bibliography = fs.readFileSync("./app/bibliography.html").toString("utf8");
 
 if (config.bibliography === false)
@@ -102,17 +101,12 @@ pageFileNames.forEach(function(file) {
   });
 });
 
-console.log(content);
-
-var footer = marked(footerSrc);
-
 var data = {
   "title": config.title,
   "titlePage": titlePage,
   "contentsPage": tableOfContents,
   "markdown": content,
-  "bibliography": bibliography,
-  "footer": footer
+  "bibliography": bibliography
 };
 
 var template = handlebars.compile(templateSrc);
