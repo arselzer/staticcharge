@@ -6,6 +6,8 @@ personal-project-report
 This is a bit of school work, which ended up as a Markdown rendering
 framework.
 
+I will extract the framework into a different repository later.
+
 It was originally a fork of my chemistry homework onepage app, which
 ended up as a HTML mess, but I converted it into a singlepage scroll
 app, which renders markdown files intelligently.

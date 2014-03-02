@@ -13,9 +13,7 @@
   * Implementation of the Application
   * Evaluation of System's effectivity
 4. [Achievement of the Goal](/#7)
-  * Judging the success
-  * Presentation of the Product
+  * Judging the success of the Product
 5. [Reflection on My Learning](#8)
-  * The Current Product
-  * Further Features
+  * The Outcome
 6. [Bibliography](/#9)
