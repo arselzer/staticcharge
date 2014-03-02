@@ -64,4 +64,4 @@ gulp.task("dev", ["watch", "server", "compile"]);
 
 gulp.task("default", ["lint", "compileLess", "compile"]);
 
-gulp.task("build", ["default", "move-to-dist"]);
+gulp.task("dist", ["move-to-dist"]);
