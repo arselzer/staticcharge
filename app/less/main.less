@@ -1,0 +1,145 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+.document {
+  font-size: 16px;
+  min-height: 800px;
+  margin: 0 auto 0 auto;
+  padding-top: 10px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 3.4em;
+  display: block;
+  font-family: "Bitter";
+  text-align: center;
+}
+
+h2,
+h3 {
+  font-family: "Lato";
+  display: block;
+  margin-top: 20px;
+  color: rgb(56, 56, 56);
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4,
+h5 {
+  font-size: 1.6em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  display: block;
+}
+
+table {
+  .table();
+  .table-striped();
+  
+  > tbody > tr > td {
+    border-top: 1px solid rgb(190, 207, 209);
+  }
+  
+  > thead > tr > th {
+    border-bottom: 2px solid rgb(101, 183, 111);
+  }
+  
+  margin: 0 auto;
+  
+  /* < medium screen */
+  @media (max-width: @screen-md-min) {
+    width: (@container-sm - 200px);
+  }
+  
+  /* > medium screen */
+  @media (min-width: @screen-md-min) {
+    width: (@container-md - 200px);
+  }
+}
+
+.table-of-contents ol {
+  margin-top: 20px;
+  
+  @media (max-width: @screen-md-min) {
+    margin-left: 20px;
+  }
+  
+  @media (min-width: @screen-md-min) {
+    margin-left: 30%;
+  }
+  
+  width: 600px;
+  li {
+    font-size: 22px;
+  }
+  > li {
+    margin-top: 16px;
+  }
+}
+
+.section {
+  margin: 40px 0 40px 0;
+  display: block;
+
+  .text {
+    font-size: 1em;
+    font-family: "Bitter";
+    display: block;
+  }
+
+  .image {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+    .title {
+      font-size: 1.4em;
+    }
+    img {
+      margin: 20px auto 0 auto;
+    }
+  }
+
+}
+
+.bibliography {
+  margin-top: 60px;
+}
+
+.bibliography .entry {
+  margin-top: 10px;
+}
+
+.footer {
+  min-height: 200px;
+  margin: 40px 0 20px 0;
+  font-size: 2em;
+  font-family: "Arvo", serif;
+  font-style: italic;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: rgb(48, 255, 146);
+  border: 4px solid rgb(24, 127, 73);
+
+  span {
+    display: block;
+  }
+}
