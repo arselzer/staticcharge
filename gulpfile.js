@@ -54,7 +54,10 @@ gulp.task("move-to-dist", function() {
   .pipe(gulp.dest("dist/js"));
   
   gulp.src(["app/*.html", "app/*.json", "app/*.hbr"])
-  .pipe(gulp.dest("dist/"));
+  .pipe(gulp.dest("dist/"))
+  
+  gulp.src("app/bower_components/**")
+  .pipe(gulp.dest("dist/bower_components/"));
 });
 
 gulp.task("dev", ["watch", "server", "compile"]);
