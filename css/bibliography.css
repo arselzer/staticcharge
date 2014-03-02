@@ -1,0 +1,13 @@
+.bibliography > .title {
+  font-size: 1.6em;
+  font-family: "Raleway";
+}
+.bibliography .references li {
+  list-style: none;
+  margin-top: 6px;
+  display: inline-block;
+  font-family: "Bitter";
+}
+.bibliography .references li span::after {
+  content: ".";
+}
