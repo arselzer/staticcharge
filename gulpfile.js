@@ -43,6 +43,22 @@ gulp.task("watch", function() {
   gulp.watch(templateFiles, ["compile"]);
 });
 
+gulp.task("move-to-dist", function() {
+  gulp.src("app/css/*.css")
+  .pipe(gulp.dest("dist/css/"));
+  
+  gulp.src("app/images/*")
+  .pipe(gulp.dest("dist/images/"));
+  
+  gulp.src("app/js/*.js")
+  .pipe(gulp.dest("dist/js"));
+  
+  gulp.src(["app/*.html", "app/*.json", "app/*.hbr"])
+  .pipe(gulp.dest("dist/"));
+});
+
 gulp.task("dev", ["watch", "server", "compile"]);
 
 gulp.task("default", ["lint", "compileLess", "compile"]);
+
+gulp.task("build", ["default", "move-to-dist"]);
