@@ -19,13 +19,29 @@ function readAndRender(mdfile, split) {
       while (match = hrRegexp.exec(mdString) !== null) {
         matches.push(hrRegexp.lastIndex);
       }
+      
       // Slice HTML into slices
-      for (var i = 0, previousIndex = 0; i < matches.length; i++) {
-        var cutIndex = matches[i] - 5;
-        results.push(mdString.slice(previousIndex, cutIndex));
+      for (var i = 0, previousIndex = 0; i < matches.length + 1; i++) {
+        var cutIndex = 0;
+        if (i !== matches.length)
+          cutIndex = matches[i];
+        else
+          cutIndex = mdString.length;
+        
+        // Slice from start to <hr> and cut off <hr>
+        
+        var cutAt = 0;
+        if (i !== matches.length)
+          cutAt = cutIndex - 5;
+        else
+          cutAt = cutIndex;
+        
+        results.push(
+          mdString
+          .slice(previousIndex, cutAt)
+        );
         previousIndex = cutIndex;
       }
-      console.log(JSON.stringify(results, null, 2));
       return results;
     }
     else {
@@ -79,11 +95,14 @@ var content = [];
 * into the content array.
 */
 pageFileNames.forEach(function(file) {
+  // Split into array at <hr>
   var pages = readAndRender(file, true);
   pages.forEach(function(page) {
     content.push(page);
   });
 });
+
+console.log(content);
 
 var footer = marked(footerSrc);
 
