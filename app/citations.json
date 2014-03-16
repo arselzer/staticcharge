@@ -1,76 +1,282 @@
 [
   {
-    "title": "Hydrogen - Wikipedia, the free encyclopedia",
-    "organization": "Wikimedia Foundation",
-    "lastModDate": null,
+    "author": null,
+    "title": "remixz/dogescript · GitHub",
+    "organization": "Github, inc.",
     "type": "Web",
-    "accessDate": "Sun Feb 02 2014",
-    "url": "<http://en.wikipedia.org/wiki/Hydrogen>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/remixz/dogescript"
   },
   {
-    "title": "pH Scale",
+    "author": null,
+    "title": "Git - Reference",
     "organization": null,
-    "lastModDate": null,
     "type": "Web",
-    "accessDate": "Sun Feb 02 2014",
-    "url": "<http://www.elmhurst.edu/~chm/vchembook/184ph.html>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://git-scm.com/docs"
   },
   {
-    "title": "pH scale.",
+    "author": null,
+    "title": "Stack Overflow",
     "organization": null,
-    "lastModDate": null,
     "type": "Web",
-    "accessDate": "Sun Feb 02 2014",
-    "url": "<http://staff.jccc.net/pdecell/chemistry/phscale.html>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://stackoverflow.com/"
   },
   {
-    "author": "Water Quality",
-    "title": "pH - Water Quality - extension.usu.edu",
+    "author": null,
+    "title": "\n      Documentation – Redis\n    ",
     "organization": null,
-    "lastModDate": null,
     "type": "Web",
-    "accessDate": "Wed Feb 12 2014",
-    "url": "<http://extension.usu.edu/waterquality/htm/whats-in-your-water/ph>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://redis.io/documentation"
   },
   {
-    "title": "Important Water Quality Factors",
+    "author": null,
+    "title": "npm",
     "organization": null,
-    "lastModDate": null,
     "type": "Web",
-    "accessDate": "Wed Feb 12 2014",
-    "url": "<http://www.h2ou.com/h2wtrqual.htm#alkalinity>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://www.npmjs.org"
   },
   {
-    "title": " Effects of acids and alkalis on aquatic life",
+    "author": null,
+    "title": "Express - api reference",
     "organization": null,
-    "lastModDate": null,
     "type": "Web",
-    "accessDate": "Thu Feb 13 2014",
-    "url": "<http://www.lenntech.com/aquatic/acids-alkalis.htm>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://expressjs.com/api.html"
   },
   {
-    "title": "pH Water Quality Information ",
+    "author": null,
+    "title": "localForage by mozilla",
     "organization": null,
-    "lastModDate": null,
     "type": "Web",
-    "accessDate": "Thu Feb 13 2014",
-    "url": "<http://www.state.ky.us/nrepc/water/wcpph.htm>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://mozilla.github.io/localForage/"
   },
   {
-    "author": "Howard Perlman, USGS",
-    "title": "pH: Water properties, from the USGS Water-Science School",
-    "organization": null,
-    "lastModDate": null,
+    "author": null,
+    "title": "wycats/handlebars.js · GitHub",
+    "organization": "Github, inc.",
     "type": "Web",
-    "accessDate": "Thu Feb 13 2014",
-    "url": "<http://ga.water.usgs.gov/edu/ph.html>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/wycats/handlebars.js"
   },
   {
-    "title": "Effects of Acid Rain - Surface Waters and Aquatic Animals | Acid Rain | Clean Air Markets | US EPA",
-    "organization": null,
-    "lastModDate": null,
+    "author": null,
+    "title": "Mozilla Developer Network",
+    "organization": "Mozilla",
     "type": "Web",
-    "accessDate": "Thu Feb 13 2014",
-    "url": "<http://www.epa.gov/acidrain/effects/surface_water.html>"
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://developer.mozilla.org/en-US/"
+  },
+  {
+    "author": null,
+    "title": "AngularJS",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://docs.angularjs.org/tutorial"
+  },
+  {
+    "author": null,
+    "title": "AngularJS",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://docs.angularjs.org/api"
+  },
+  {
+    "author": "Mark Otto, Jacob Thornton, and Bootstrap contributors",
+    "title": "\n  \n    Components · Bootstrap\n  \n",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://getbootstrap.com/components/"
+  },
+  {
+    "author": "Mark Otto, Jacob Thornton, and Bootstrap contributors",
+    "title": "\n  \n    JavaScript · Bootstrap\n  \n",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://getbootstrap.com/javascript/"
+  },
+  {
+    "author": null,
+    "title": "Mocha - the fun, simple, flexible JavaScript test framework",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://visionmedia.github.io/mocha/"
+  },
+  {
+    "author": "Andris Reinman",
+    "title": "Nodemailer",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://www.nodemailer.com/"
+  },
+  {
+    "author": null,
+    "title": "jaredhanson/passport-browserid · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/jaredhanson/passport-browserid"
+  },
+  {
+    "author": null,
+    "title": "sindresorhus/pageres · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/sindresorhus/pageres"
+  },
+  {
+    "author": "jQuery Foundation - jquery.org",
+    "title": "jQuery API Documentation",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://api.jquery.com/"
+  },
+  {
+    "author": null,
+    "title": "LearnBoost/mongoose · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/LearnBoost/mongoose"
+  },
+  {
+    "author": null,
+    "title": "Pixastic: Documentation",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://www.pixastic.com/lib/docs/"
+  },
+  {
+    "author": null,
+    "title": "ai/autoprefixer · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/ai/autoprefixer"
+  },
+  {
+    "author": null,
+    "title": "nodejitsu/forever · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/nodejitsu/forever"
+  },
+  {
+    "author": null,
+    "title": "LearnBoost/knox · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/LearnBoost/knox"
+  },
+  {
+    "author": null,
+    "title": "Passport  | Overview ",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://passportjs.org/guide/"
+  },
+  {
+    "author": null,
+    "title": "HttpCoreModule - Nginx Community",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://wiki.nginx.org/HttpCoreModule#Directives"
+  },
+  {
+    "author": null,
+    "title": "Underscore.js",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://underscorejs.org/"
+  },
+  {
+    "author": null,
+    "title": "FortAwesome/Font-Awesome · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/FortAwesome/Font-Awesome"
+  },
+  {
+    "author": null,
+    "title": "boo1ean/casual · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/boo1ean/casual"
+  },
+  {
+    "author": null,
+    "title": "gulp/README.md at master · gulpjs/gulp · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/gulpjs/gulp/blob/master/README.md"
+  },
+  {
+    "author": null,
+    "title": "cloudhead/http-console · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/cloudhead/http-console"
+  },
+  {
+    "author": null,
+    "title": "Moment.js | Parse, validate, manipulate, and display dates in javascript.",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://momentjs.com/"
+  },
+  {
+    "author": null,
+    "title": "mishoo/UglifyJS · GitHub",
+    "organization": "Github, inc.",
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "https://github.com/mishoo/UglifyJS"
+  },
+  {
+    "author": "Anton Kovalyov",
+    "title": "JSHint Documentation",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://jshint.com/docs/"
+  },
+  {
+    "author": null,
+    "title": "Bower - A package manager for the web",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://bower.io/"
+  },
+  {
+    "author": null,
+    "title": "Socket.IO: the cross-browser WebSocket for realtime apps.",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 16 2014",
+    "url": "http://socket.io/"
   }
 ]
