@@ -1,4 +1,5 @@
-var gulp = require("gulp"),
+var path = require("path"),
+		gulp = require("gulp"),
     exec = require("child_process").exec,
     nodemon = require("gulp-nodemon"),
     jshint = require("gulp-jshint"),
@@ -6,9 +7,18 @@ var gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     nodemon = require("gulp-nodemon");
 
-var jsFiles = ["*.js", "app/js/**.js"];
-var templateFiles = ["app/**.hbr", "app/**.md", "app/content/**.md"];
-var lessFiles = ["app/less/**.less"];
+var jsFiles = [
+	"*.js",
+	"app/js/*.js"
+];
+
+var templateFiles = [
+	"app/*.hbr",
+	"app/*.md",
+	"app/content/*.md"
+];
+
+var lessFiles = "./app/less/*.less";
 
 gulp.task("compileLess", function() {
   gulp.src(lessFiles)

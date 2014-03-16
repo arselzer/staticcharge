@@ -51,7 +51,7 @@ function readAndRender(mdfile, split) {
   }
 }
 
-var templateSrc = fs.readFileSync("./app/index.hbr").toString("utf8");
+var templateSrc = fs.readFileSync("./app/index.hbs").toString("utf8");
 var bibliography = fs.readFileSync("./app/bibliography.html").toString("utf8");
 
 if (config.bibliography === false)
@@ -109,9 +109,17 @@ var data = {
   "bibliography": bibliography
 };
 
+var printData = {};
+Object.keys(data).forEach(function(key) {
+  printData[key] = data[key];
+});
+printData.print = true;
+
 var template = handlebars.compile(templateSrc);
 
-var result = template(data);
+var index = template(data);
+var print = template(printData);
 
 console.log("Saving compiled templates.");
-fs.writeFileSync("./app/index.html", result);
+fs.writeFileSync("./app/index.html", index);
+fs.writeFileSync("./app/print.html", print);

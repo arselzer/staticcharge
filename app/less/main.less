@@ -6,6 +6,46 @@
   }
 }
 
+.switch-button {
+  width: 16em;
+  height: 3.2em;
+  padding: 0.2em 2px 0.2em 2px;
+  background-color: rgba(204, 75, 102, 0.76);
+  border-radius: 6px;
+  position: fixed;
+  z-index: 2000;
+  top: 4em;
+  right: 2em;
+  
+  a {
+    font-size: 2.0em;
+    color: #000;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* < medium screen */
+  @media (max-width: @screen-md-min) {
+    width: 8em;
+    height: 2em;
+    right: 0.2em;
+    top: 0.6em;
+    
+    a {
+      font-size: 1em;
+    }
+  }
+  
+  .to-print {
+
+  }
+  
+  .to-scroll {
+    
+  }
+}
+
 .document {
   font-size: 16px;
   min-height: 800px;
