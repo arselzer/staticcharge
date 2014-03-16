@@ -9,7 +9,7 @@ angular.module("chemistryAB")
     angular.element(document).onepage_scroll({
       sectionContainer: "section",
       animationTime: 1000,             
-      pagination: true,                       
+      pagination: false,                       
       loop: true,                     
       keyboard: true,
       updateURL: true,
