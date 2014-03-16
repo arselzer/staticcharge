@@ -5,7 +5,7 @@ var path = require("path"),
     jshint = require("gulp-jshint"),
     less = require("gulp-less"),
     autoprefixer = require("gulp-autoprefixer"),
-    nodemon = require("gulp-nodemon");
+    myth = require("gulp-myth");
 
 var jsFiles = [
 	"*.js",
@@ -20,10 +20,10 @@ var templateFiles = [
 
 var lessFiles = "./app/less/*.less";
 
-gulp.task("compileLess", function() {
+gulp.task("compile-less", function() {
   gulp.src(lessFiles)
   .pipe(less())
-  .pipe(autoprefixer("last 2 versions", "> 1%", "ie 8"))
+  .pipe(myth())
   .pipe(gulp.dest("app/css"));
 });
 
@@ -70,8 +70,8 @@ gulp.task("move-to-dist", function() {
   .pipe(gulp.dest("dist/bower_components/"));
 });
 
-gulp.task("dev", ["watch", "server", "compile"]);
+gulp.task("dev", ["watch", "server", "compile-less", "compile"]);
 
-gulp.task("default", ["lint", "compileLess", "compile"]);
+gulp.task("default", ["lint", "compile-less", "compile"]);
 
 gulp.task("dist", ["move-to-dist"]);

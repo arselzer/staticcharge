@@ -14,18 +14,19 @@
     "environment",
     "impact"
   ],
-  "dependencies" : {
+  "dependencies": {
     "express": "3.x",
     "marked": "0.3.x",
-    "handlebars": "2.x"
+    "handlebars": "2.x",
+    "gulp-myth": "^0.1.1"
   },
-  "devDependencies" : {
-    "gulp" : "3.x",
-    "gulp-util" : "2.x",
-    "gulp-nodemon" : "0.1.x",
+  "devDependencies": {
+    "gulp": "3.x",
+    "gulp-util": "2.x",
+    "gulp-nodemon": "0.1.x",
     "gulp-less": "1.2.x",
-    "gulp-autoprefixer" : "0.0.x",
-    "gulp-jshint" : "1.3.x"
+    "gulp-autoprefixer": "0.0.x",
+    "gulp-jshint": "1.3.x"
   },
   "repository": {
     "type": "git",
