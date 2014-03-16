@@ -8,13 +8,12 @@ angular.module("chemistryAB")
     
     angular.element(document).onepage_scroll({
       sectionContainer: "section",
-      easing: "ease-in-out",
       animationTime: 1000,             
       pagination: true,                       
       loop: true,                     
       keyboard: true,
       updateURL: true,
-      responsiveFallback: 620
+      responsiveFallback: 600
     });
   };
 });

@@ -48,7 +48,7 @@ gulp.task("compile", function() {
 });
 
 gulp.task("watch", function() {
-  gulp.watch(lessFiles, ["compileLess"]);
+  gulp.watch(lessFiles, ["compile-less"]);
   gulp.watch(jsFiles, ["lint"]);
   gulp.watch(templateFiles, ["compile"]);
 });
