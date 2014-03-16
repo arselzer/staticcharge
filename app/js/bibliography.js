@@ -4,4 +4,4 @@ angular.module("chemistryAB")
   $http.get("citations.json").success(function(citations) {
     $scope.references = citations;
   });
-})
+});

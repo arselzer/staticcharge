@@ -14,9 +14,9 @@ function readAndRender(mdfile, split) {
     if (/<hr\s?\/?>/.test(mdString)) {
       var matches = [];
       var match;
-      var i = 0;
       // Push all match indexes
-      while (match = hrRegexp.exec(mdString) !== null) {
+      
+      while ((match = hrRegexp.exec(mdString)) !== null) {
         matches.push(hrRegexp.lastIndex);
       }
       
@@ -110,6 +110,7 @@ var data = {
 };
 
 var printData = {};
+// Copy object
 Object.keys(data).forEach(function(key) {
   printData[key] = data[key];
 });

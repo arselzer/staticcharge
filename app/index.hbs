@@ -31,6 +31,7 @@
             <div class="container">
             {{{titlePage}}}
             </div>
+            {{#if ../print}} <hr> {{/if}}
           </section>
         {{/if}}
         {{#if contentsPage}}
@@ -38,6 +39,7 @@
             <div class="container">
             {{{contentsPage}}}
             </div>
+            {{#if ../print}} <hr> {{/if}}
           </section>
         {{/if}}
         {{#each markdown}}
@@ -45,6 +47,7 @@
             <div class="container">
               {{{this}}}
             </div>
+          {{#if ../print}} <hr> {{/if}}
           </section>
         {{/each}}
         {{#if bibliography}}
