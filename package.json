@@ -16,7 +16,7 @@
   "dependencies": {
     "express": "3.x",
     "marked": "0.3.x",
-    "handlebars": "2.x",
+    "handlebars": "2.x"
   },
   "devDependencies": {
     "gulp": "3.x",
