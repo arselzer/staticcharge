@@ -4,7 +4,7 @@ var marked = require("marked");
 var handlebars = require("handlebars");
 
 function readAndRender(mdfile, split) {
-  var mdString = marked(fs.readFileSync(__dirname + "/app/content/" + mdfile).toString());
+  var mdString = marked(fs.readFileSync(__dirname + "/content/" + mdfile).toString());
   if (!split || typeof(split) === "undefined") {
     return mdString;
   }
@@ -62,7 +62,7 @@ if (config.bibliography === false)
 var tableOfContents;
 var titlePage;
 
-var markdownFiles = fs.readdirSync("./app/content");
+var markdownFiles = fs.readdirSync("./content");
 
 // Extract special files
 markdownFiles.forEach(function(filename) {

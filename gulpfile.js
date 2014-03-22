@@ -4,8 +4,7 @@ var path = require("path"),
     nodemon = require("gulp-nodemon"),
     jshint = require("gulp-jshint"),
     less = require("gulp-less"),
-    autoprefixer = require("gulp-autoprefixer"),
-    myth = require("gulp-myth");
+    autoprefixer = require("gulp-autoprefixer");
 
 var jsFiles = [
 	"*.js",
@@ -15,7 +14,7 @@ var jsFiles = [
 var templateFiles = [
 	"app/*.hbr",
 	"app/*.md",
-	"app/content/*.md"
+	"content/*.md"
 ];
 
 var lessFiles = "./app/less/*.less";
@@ -23,7 +22,7 @@ var lessFiles = "./app/less/*.less";
 gulp.task("compile-less", function() {
   gulp.src(lessFiles)
   .pipe(less())
-  .pipe(myth())
+  .pipe(autoprefixer())
   .pipe(gulp.dest("app/css"));
 });
 
@@ -41,7 +40,7 @@ gulp.task("server", function() {
 });
 
 gulp.task("compile", function() {
-  exec("node build.js", function(err, stdout, stderr) {
+  exec("node staticcharge.js", function(err, stdout, stderr) {
     if (err) throw err;
     console.log(stdout);
   });
