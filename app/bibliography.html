@@ -1,0 +1,15 @@
+<div class="bibliography" ng-controller="bibliography">
+  <span class="title">Bibliography</span>
+  <div class="references">
+    <li class="reference" ng-repeat="reference in references">
+      <span>{{$index + 1}}</span>
+      <span ng-hide="!reference.author" class="bib-author">             {{reference.author}}        </span>
+      <span ng-hide="!reference.title" class="bib-title">               {{reference.title}}         </span>
+      <span ng-hide="!reference.organization" class="bib-organization"> {{reference.organization}}  </span>
+      <span ng-hide="!reference.lastModDate" class="bib-last-mod-date"> {{reference.lastModDate}}   </span>
+      <span ng-hide="!reference.type" class="bib-type">                 {{reference.type}}          </span>
+      <span ng-hide="!reference.accessDate" class="bib-access-date">    {{reference.accessDate}}    </span>
+      <span ng-hide="!reference.url" class="bib-url">                   {{reference.url}}           </span>
+    </li>
+  </div>
+</div>
