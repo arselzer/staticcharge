@@ -1,0 +1,34 @@
+[
+  {
+    "author": null,
+    "title": " Node.js v0.10.26 Manual & Documentation",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 23 2014",
+    "url": "http://nodejs.org/api/"
+  },
+  {
+    "author": null,
+    "title": "gulp.js - the streaming build system",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 23 2014",
+    "url": "http://gulpjs.com/"
+  },
+  {
+    "author": null,
+    "title": "Express - node.js web application framework",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 23 2014",
+    "url": "http://expressjs.com/"
+  },
+  {
+    "author": null,
+    "title": "Handlebars.js: Minimal Templating on Steroids",
+    "organization": null,
+    "type": "Web",
+    "accessDate": "Sun Mar 23 2014",
+    "url": "http://handlebarsjs.com/"
+  }
+]

@@ -40,7 +40,7 @@ gulp.task("server", function() {
 });
 
 gulp.task("compile", function() {
-  exec("node staticcharge.js", function(err, stdout, stderr) {
+  exec("node build.js", function(err, stdout, stderr) {
     if (err) throw err;
     console.log(stdout);
   });
