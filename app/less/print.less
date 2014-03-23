@@ -1,4 +1,18 @@
+@import "../bower_components/bootstrap/less/variables.less";
+
 .titlepage {
+  @media (max-width: @screen-xs) {
+    margin-bottom: @screen-xs * 0.6;
+  }
+  @media (min-width: @screen-xs) and (max-width: @screen-sm) {
+    margin-bottom: @screen-sm * 0.6;
+  }
+  @media (min-width: @screen-sm) and (max-width: @screen-md) {
+    margin-bottom: @screen-md * 0.6;
+  }
+  @media (min-width: @screen-md) {
+    margin-bottom: @screen-lg * 0.6;
+  }
   margin-bottom: 32em; 
 }
 
