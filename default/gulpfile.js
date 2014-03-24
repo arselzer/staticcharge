@@ -39,13 +39,6 @@ gulp.task("server", function() {
   });
 });
 
-gulp.task("compile", function() {
-  exec("node build.js", function(err, stdout, stderr) {
-    if (err) throw err;
-    console.log(stdout);
-  });
-});
-
 gulp.task("watch", function() {
   gulp.watch(lessFiles, ["compile-less"]);
   gulp.watch(jsFiles, ["lint"]);
@@ -69,8 +62,8 @@ gulp.task("move-to-dist", function() {
   .pipe(gulp.dest("dist/bower_components/"));
 });
 
-gulp.task("dev", ["watch", "server", "compile-less", "compile"]);
+gulp.task("dev", ["watch", "server", "compile-less"]);
 
-gulp.task("default", ["lint", "compile-less", "compile"]);
+gulp.task("default", ["lint", "compile-less"]);
 
 gulp.task("dist", ["move-to-dist"]);

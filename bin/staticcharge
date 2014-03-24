@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+var StaticCharge = require("../lib/staticcharge");
+var argv = require("optimist").argv;
+var fs = require("fs");
+var chalk = require("chalk");
+
+var options = {
+	port: argv.port
+};
+
+var site = new StaticCharge(process.cwd());
+console.error(process.cwd());
+
+if (argv._[0] === "generate") {
+  console.log(chalk.green("Generating a new site.."));
+  site.generate(process.cwd(), function(err) {
+    if (err) console.error(err);
+  });
+}
+
+if (argv._[0] === "build") {
+  console.log(chalk.cyan("Building your site ..."));
+	site.build(process.argv);
+}
+
+if (argv._[0] === "serve") {
+  console.log(chalk.blue("Serving your site ..."));
+	site.serve(process.argv, options.port);
+}
