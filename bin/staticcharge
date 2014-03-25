@@ -10,7 +10,6 @@ var options = {
 };
 
 var site = new StaticCharge(process.cwd());
-console.error(process.cwd());
 
 if (argv._[0] === "generate") {
   console.log(chalk.green("Generating a new site.."));
