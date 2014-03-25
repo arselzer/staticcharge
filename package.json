@@ -1,6 +1,6 @@
 {
   "name": "staticcharge",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A static site generator",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "start": "node_modules/.bin/gulp index.js"
   },
   "bin": {
-    "staticcharge": "bin/staticcharge"
+    "staticcharge": "bin/staticcharge",
+    "sch": "bin/staticcharge"
   },
   "keywords": [
     "static",
@@ -17,9 +18,9 @@
     "markdown"
   ],
   "dependencies": {
-    "express": "3.x",
-    "marked": "0.3.x",
-    "handlebars": "2.x",
+    "express": "^3.5.0",
+    "marked": "^0.3.2",
+    "handlebars": "^2.0.0-alpha.2",
     "optimist": "^0.6.1",
     "chalk": "^0.4.0",
     "ncp": "^0.5.0",

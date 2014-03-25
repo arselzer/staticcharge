@@ -8,34 +8,32 @@ A static site generator
 
 Get the files.
 
-```bash
-$ git clone https://github.com/AlexanderSelzer/staticcharge.git
-$ cd staticcharge
+Install StaticCharge.
+
+```
+$ npm install -g staticcharge
 ```
 
-Install the dependencies.
+Use StatciCharge
 
 ```bash
-$ npm install -g gulp
-$ npm install && cd app && bower install && cd ..
+$ staticcharge generate
+$ staticcharge build
+$ staticcharge serve
 ```
 
-Be ready to go
+or use the shorter version: `sch``
 
 ```bash
-$ gulp dev
+$ sch build
+$ sch serve
 ```
-
-Gulp is watching your changes, and will automatically recompile.
-
-### Status
-
-Still converting from [The original project](https://github.com/AlexanderSelzer/personal-project-report)
 
 ### Goals
 
-* Refactor everything
-* Stop using AngularJS for rendering the Bibliography
+* ~~Refactor everything~~
+* ~~Stop using AngularJS for rendering the Bibliography~~
 * Intelligent Table of Contents Format
 * Extensibility
-* Standalone CLI utility
+* Importable library
+* ~~Standalone CLI utility~~
